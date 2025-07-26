@@ -1,0 +1,29 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+---
+
+<Layout title="About">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">About Us</Fragment>
+      <Fragment slot="desc">Who we are and what we do.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-5 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Connecting the World with Quality Electronic Components
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        H.K Most International Group Co. Ltd is a trusted provider of high-quality electronic components, specializing in products such as SD cards, mobile phone parts, and other essential small electronics. We serve both B2B and B2C clients across multiple markets, bridging global suppliers with distributors and consumers worldwide.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        With a strong focus on supply chain excellence and quality assurance, we ensure timely delivery and reliable products to meet the dynamic demands of the electronics industry. Our extensive network allows us to offer competitive pricing and efficient logistics solutions tailored for international trade.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Our mission is to empower businesses and consumers by providing access to dependable electronic components, backed by professional service and expertise. We are committed to fostering long-term partnerships based on trust, transparency, and continuous innovation.
+      </p>
+    </div>
+  </Container>
+</Layout>

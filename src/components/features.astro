@@ -1,0 +1,69 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "B2B & B2C Supply Chain",
+    description:
+      "We provide seamless procurement solutions for both individual buyers and enterprise-level clients, ensuring timely and reliable delivery.",
+    icon: "bx:bxs-truck",
+  },
+  {
+    title: "Sourcing Rare Components",
+    description:
+      "Need hard-to-find electronic parts? Our global sourcing network ensures access to a wide range of authentic components.",
+    icon: "bx:bxs-search-alt-2",
+  },
+  {
+    title: "Custom Bulk Orders",
+    description:
+      "Whether you're scaling a project or restocking inventory, we support bulk orders with flexible packaging and pricing options.",
+    icon: "bx:bxs-package",
+  },
+  {
+    title: "Quality Assurance",
+    description:
+      "Every product goes through strict quality checks to meet international standards before reaching your hands.",
+    icon: "bx:bxs-check-shield",
+  },
+  {
+    title: "International Logistics",
+    description:
+      "From customs to last-mile delivery, we handle international shipping and documentation for smooth cross-border transactions.",
+    icon: "bx:bxs-plane-alt",
+  },
+  {
+    title: "Dedicated Support",
+    description:
+      "Our customer service team is here to assist you — whether it’s technical guidance, order tracking, or after-sales help.",
+    icon: "bx:bxs-phone",
+  },
+];
+
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Everything you need in one place
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    We have what it takes for your business or your little project !
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
